@@ -1,0 +1,14 @@
+net: "auto_reid/triplet_alxnet_reid_256_with_drop_train_val.prototxt"
+test_iter: 50
+test_interval: 1000
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 100000
+display: 1000
+max_iter: 500000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+snapshot_prefix: "auto_reid/model/triplet_alxnet_reid_256_with_drop/reid_triplet"
+solver_mode: GPU
